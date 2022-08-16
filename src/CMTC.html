@@ -297,12 +297,6 @@
                 <div class="cy-panzoom-pan-indicator" style="display: none;"></div>
               </div>
             </div>
-
-            <div style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); position: relative; z-index: 0; overflow: hidden; width: 947px; height: 560px;">
-              <canvas data-id="layer0-selectbox" width="1894" height="1120" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline-style: none; position: absolute; z-index: 3; width: 947px; height: 560px;"></canvas>
-              <canvas data-id="layer1-drag" width="1894" height="1120" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline-style: none; position: absolute; z-index: 2; width: 947px; height: 560px;"></canvas>
-              <canvas data-id="layer2-node" width="1894" height="1120" style="user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline-style: none; position: absolute; z-index: 1; width: 947px; height: 560px;"></canvas>
-            </div>
           </div>
         </div>
         <!-- /Card -->
@@ -317,7 +311,8 @@
         </a><!-- Card -->
       <div class="p-8 mt-6 overflow-x-auto lg:mt-0 leading-normal rounded shadow bg-white">
         <!-- = render 'genes/disease_gene_list', :genes => @genes -->
-        <div id="genes-datatable_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="genes-datatable_length"><label>Show <select name="genes-datatable_length" aria-controls="genes-datatable" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="genes-datatable_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="genes-datatable"></label></div><div id="genes-datatable_processing" class="dataTables_processing" style="display: none;">Processing...</div><table class="text-center dataTable no-footer" data-source="/genes/datatable/disease/130.json" id="genes-datatable" role="grid" aria-describedby="genes-datatable_info" style="width: 951px;">
+        <div id="genes-datatable_wrapper" class="dataTables_wrapper no-footer">
+          <table class="text-center dataTable no-footer" data-source="/CMTC_files/genes_130.json" id="genes-datatable" role="grid" aria-describedby="genes-datatable_info" style="width: 951px;">
         <thead>
           <tr role="row">
             <th class="sorting_asc" tabindex="0" aria-controls="genes-datatable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="
@@ -341,7 +336,7 @@
           <tr class="even"><td class="sorting_1"><a class="lg:hover:text-yellow-600" href="https://rsdb.cmdm.tw/genes/15">NOTCH1</a></td><td>4851</td><td>notch receptor 1</td><td>274</td><td>18</td><td>DisGeNET: BEFREE;DisGeNET: HPO;DisGeNET: LHGDN;DisGeNET: ORPHANET;Human Phenotype Ontology</td><td>DisGeNET: Text-mining; DisGeNET: Inferred; DisGeNET: Curated; Human Phenotype Ontology</td></tr>
         </tbody>
       </table>
-      <div class="dataTables_info" id="genes-datatable_info" role="status" aria-live="polite">Showing 1 to 2 of 2 entries</div><div class="dataTables_paginate paging_full_numbers" id="genes-datatable_paginate"><a class="paginate_button first disabled" aria-controls="genes-datatable" data-dt-idx="0" tabindex="-1" id="genes-datatable_first">First</a><a class="paginate_button previous disabled" aria-controls="genes-datatable" data-dt-idx="1" tabindex="-1" id="genes-datatable_previous">Previous</a><span><a class="paginate_button current" aria-controls="genes-datatable" data-dt-idx="2" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="genes-datatable" data-dt-idx="3" tabindex="-1" id="genes-datatable_next">Next</a><a class="paginate_button last disabled" aria-controls="genes-datatable" data-dt-idx="4" tabindex="-1" id="genes-datatable_last">Last</a></div></div>
+    </div>
     </div>
     <!-- /Card -->
     <!-- divider -->
@@ -352,7 +347,8 @@
     </a><!-- Card -->
     <div class="p-8 mt-6 overflow-x-auto lg:mt-0 leading-normal rounded shadow bg-white">
       <!-- = render 'phenotypes/list', :phenotypes => @phenotypes -->
-      <div id="phenotypes-datatable_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="phenotypes-datatable_length"><label>Show <select name="phenotypes-datatable_length" aria-controls="phenotypes-datatable" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="phenotypes-datatable_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="phenotypes-datatable"></label></div><div id="phenotypes-datatable_processing" class="dataTables_processing" style="display: none;">Processing...</div><table class="text-center dataTable no-footer" data-source="/phenotypes/datatable/disease/130.json" id="phenotypes-datatable" role="grid" aria-describedby="phenotypes-datatable_info" style="width: 950px;">
+      <div id="phenotypes-datatable_wrapper" class="dataTables_wrapper no-footer">
+        <table class="text-center dataTable no-footer" data-source="/CMTC_files/phenotypes_130.json" id="phenotypes-datatable" role="grid" aria-describedby="phenotypes-datatable_info" style="width: 950px;">
       <thead>
         <tr role="row">
           <th class="sorting_asc" tabindex="0" aria-controls="phenotypes-datatable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="
@@ -389,7 +385,8 @@
     <a class="px-2 pb-8" href="https://rsdb.cmdm.tw/dl_disease_data/chemicals/130">Download
     </a><!-- Card -->
     <div class="p-8 mt-6 overflow-x-auto lg:mt-0 leading-normal rounded shadow bg-white">
-      <div id="chemicals-datatable_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="chemicals-datatable_length"><label>Show <select name="chemicals-datatable_length" aria-controls="chemicals-datatable" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="chemicals-datatable_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="chemicals-datatable"></label></div><div id="chemicals-datatable_processing" class="dataTables_processing" style="display: none;">Processing...</div><table class="text-center dataTable no-footer" data-source="/compounds/datatable/disease/130.json" id="chemicals-datatable" role="grid" aria-describedby="chemicals-datatable_info" style="width: 949px;">
+      <div id="chemicals-datatable_wrapper" class="dataTables_wrapper no-footer">
+        <table class="text-center dataTable no-footer" data-source="/CMTC_files/chemicals_130.json" id="chemicals-datatable" role="grid" aria-describedby="chemicals-datatable_info" style="width: 949px;">
       <thead>
       <tr class="text-left" role="row"><th class="sorting_asc" tabindex="0" aria-controls="chemicals-datatable" rowspan="1" colspan="1" aria-sort="ascending" aria-label="PubChem CID: activate to sort column descending" style="width: 119px;">PubChem CID</th><th class="sorting" tabindex="0" aria-controls="chemicals-datatable" rowspan="1" colspan="1" aria-label="
       Name
@@ -402,7 +399,8 @@
       </th><th class="sorting" tabindex="0" aria-controls="chemicals-datatable" rowspan="1" colspan="1" aria-label="Data source: activate to sort column ascending" style="width: 306px;">Data source</th><th class="sorting" tabindex="0" aria-controls="chemicals-datatable" rowspan="1" colspan="1" aria-label="Evidence: activate to sort column ascending" style="width: 242px;">Evidence</th></tr>
       </thead>
       <tbody class="text-left" id="chemicals"><tr class="odd"><td class="sorting_1"><a href="https://pubchem.ncbi.nlm.nih.gov/compound/1775"><img src="./CMTC_files/imgsrv.fcgi"></a></td><td><a class="lg:hover:text-yellow-600" href="https://rsdb.cmdm.tw/chemicals/7930">Phenytoin</a></td><td>Comparative Toxicogenomics Database</td><td>marker/mechanism; therapeutic</td></tr></tbody></table>
-      <div class="dataTables_info" id="chemicals-datatable_info" role="status" aria-live="polite">Showing 1 to 1 of 1 entries</div><div class="dataTables_paginate paging_full_numbers" id="chemicals-datatable_paginate"><a class="paginate_button first disabled" aria-controls="chemicals-datatable" data-dt-idx="0" tabindex="-1" id="chemicals-datatable_first">First</a><a class="paginate_button previous disabled" aria-controls="chemicals-datatable" data-dt-idx="1" tabindex="-1" id="chemicals-datatable_previous">Previous</a><span><a class="paginate_button current" aria-controls="chemicals-datatable" data-dt-idx="2" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="chemicals-datatable" data-dt-idx="3" tabindex="-1" id="chemicals-datatable_next">Next</a><a class="paginate_button last disabled" aria-controls="chemicals-datatable" data-dt-idx="4" tabindex="-1" id="chemicals-datatable_last">Last</a></div></div>
+
+    </div>
     </div>
     <!-- /Card -->
     <!-- divider -->
@@ -462,13 +460,14 @@
     <a class="px-2 pb-8" href="https://rsdb.cmdm.tw/dl_disease_data/references/130">Download
     </a><!-- Card -->
     <div class="p-8 mt-6 lg:mt-0 leading-normal rounded shadow bg-white">
-      <div id="references-datatable_wrapper" class="dataTables_wrapper no-footer"><div class="dataTables_length" id="references-datatable_length"><label>Show <select name="references-datatable_length" aria-controls="references-datatable" class=""><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div><div id="references-datatable_filter" class="dataTables_filter"><label>Search:<input type="search" class="" placeholder="" aria-controls="references-datatable"></label></div><div id="references-datatable_processing" class="dataTables_processing" style="display: none;">Processing...</div><table class="text-center dataTable no-footer" data-source="/references/datatable/disease/130.json" id="references-datatable" role="grid" aria-describedby="references-datatable_info" style="width: 949px;">
+      <div id="references-datatable_wrapper" class="dataTables_wrapper no-footer">
+        <table class="text-center dataTable no-footer" data-source="/CMTC_files/references_130.json" id="references-datatable" role="grid" aria-describedby="references-datatable_info" style="width: 949px;">
       <thead>
-      <tr role="row"><th class="sorting" tabindex="0" aria-controls="references-datatable" rowspan="1" colspan="1" aria-label="PMID &amp;amp; Link: activate to sort column ascending" style="width: 573px;">PMID &amp; Link</th><th class="sorting_desc" tabindex="0" aria-controls="references-datatable" rowspan="1" colspan="1" aria-sort="descending" aria-label="Title: activate to sort column ascending" style="width: 304px;">Title</th></tr>
+      <tr role="row">
+        <th class="sorting" tabindex="0" aria-controls="references-datatable" rowspan="1" colspan="1" aria-label="PMID &amp;amp; Link: activate to sort column ascending" style="width: 573px;">PMID &amp; Link</th>
+        <th class="sorting_desc" tabindex="0" aria-controls="references-datatable" rowspan="1" colspan="1" aria-sort="descending" aria-label="Title: activate to sort column ascending" style="width: 304px;">Title</th></tr>
       </thead>
       <tbody id="references"><tr class="odd"><td></td><td class="sorting_1"></td></tr><tr class="even"><td><a class="text-lg lg:hover:text-yellow-600" href="https://pubmed.ncbi.nlm.nih.gov/25957586"><span>25957586</span></a></td><td class="sorting_1"><a class="lg:hover:text-yellow-600" href="https://pubmed.ncbi.nlm.nih.gov/25957586"></a></td></tr></tbody></table>
-      <div class="dataTables_info" id="references-datatable_info" role="status" aria-live="polite">Showing 1 to 2 of 2 entries</div>
-      <div class="dataTables_paginate paging_full_numbers" id="references-datatable_paginate"><a class="paginate_button first disabled" aria-controls="references-datatable" data-dt-idx="0" tabindex="-1" id="references-datatable_first">First</a><a class="paginate_button previous disabled" aria-controls="references-datatable" data-dt-idx="1" tabindex="-1" id="references-datatable_previous">Previous</a><span><a class="paginate_button current" aria-controls="references-datatable" data-dt-idx="2" tabindex="0">1</a></span><a class="paginate_button next disabled" aria-controls="references-datatable" data-dt-idx="3" tabindex="-1" id="references-datatable_next">Next</a><a class="paginate_button last disabled" aria-controls="references-datatable" data-dt-idx="4" tabindex="-1" id="references-datatable_last">Last</a></div>
       </div>
     </div>
     <!-- /Card -->
@@ -528,7 +527,7 @@
 </script>
 
 <script>
-  let nodes_url = "https://rsdb.cmdm.tw/disease/130.json";
+  let nodes_url = "/130.json";
   let cluster_array = [["ORPHA:1556"],["HP:0000965","HP:0200041","HP:0008065","HP:0100585","HP:0100814","HP:0007565","HP:0000979","HP:0025107","HP:0001009"],["WDR19"],["ARL6IP6","NOTCH1"],["1775"]];
 </script>
 <!-- network javascipt -->
@@ -661,7 +660,7 @@
         "serverSide": true,
         ajax: {
           url: $('#chemicals-datatable').data('source'),
-          type: 'POST',
+          type: 'GET',
           "headers": {
             'X-CSRF-Token': token
           }
@@ -687,7 +686,7 @@
         "serverSide": true,
         ajax: {
           url: $('#genes-datatable').data('source'),
-          type: 'POST',
+          type: 'GET',
           "headers": {
             'X-CSRF-Token': token
           }
@@ -716,7 +715,7 @@
         "serverSide": true,
         ajax: {
           url: $('#phenotypes-datatable').data('source'),
-          type: 'POST',
+          type: 'GET',
           "headers": {
             'X-CSRF-Token': token
           }
@@ -744,7 +743,7 @@
         "serverSide": true,
         ajax: {
           url: $('#references-datatable').data('source'),
-          type: 'POST',
+          type: 'GET',
           "headers": {
             'X-CSRF-Token': token
           }
