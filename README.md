@@ -1,6 +1,6 @@
 # rsdb_publication
 ## Introduction
-This repository is the disease page of RSDB for displaying Cutis marmorata telangiectatica congenita (CMTC) to demostrate the code for the network (starts from line 530) in the CMTC.html and the network json file in the 130.json file. 
+This repository is the disease page of RSDB to display Cutis marmorata telangiectatica congenita (CMTC) for the code for the network (starts from line 530) in the CMTC.html and the network json file in the 130.json file. 
 
 ## Steps to draw the network
 1. `git@github.com:CMDM-Lab/rsdb_publication.git` or [directly download](https://github.com/CMDM-Lab/rsdb_publication/archive/refs/heads/main.zip)
